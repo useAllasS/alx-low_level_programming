@@ -1,1 +1,2 @@
-Debugging the code tasks
+# 0x03. C - Debugging
+noted 2 ~~
