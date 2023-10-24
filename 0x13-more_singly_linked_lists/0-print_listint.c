@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * print_listint - print list
  * @h : argument
