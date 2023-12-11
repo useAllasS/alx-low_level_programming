@@ -1,5 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MYLIB_H
+#define MYLIB_H
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
