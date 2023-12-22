@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include <stdbool.h>
 
 /**
  * shash_table_create - creates a sorted hash table.
@@ -62,7 +61,7 @@ shash_node_t *set_spair(const char *key, const char *value)
  * Return: the node, or NULL if failed.
  */
 shash_node_t *set_spair_only(shash_table_t *ht, const char *key,
-		const char *value, unsigned long int index)
+			     const char *value, unsigned long int index)
 {
 	shash_node_t *node = set_spair(key, value);
 
@@ -102,7 +101,7 @@ int update_value(shash_node_t *node, const char *value)
  * Return: the new node, or NULL if failed.
  */
 shash_node_t *set_spair_front(shash_table_t *ht, const char *key,
-		const char *value, unsigned long int index)
+			     const char *value, unsigned long int index)
 {
 	shash_node_t *node = set_spair(key, value);
 
@@ -281,7 +280,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	while (node != NULL)
 	{
 		if (count > 0)
-		printf(", ");
+			printf(", ");
 		printf("'%s': '%s'", node->key, node->value);
 		node = node->sprev;
 		count++;
